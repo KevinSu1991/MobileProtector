@@ -1,0 +1,15 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '8.0'
+
+def shared_pods
+pod 'AFNetworking'
+pod 'JSONModel'
+pod 'SDWebImage'
+
+pod 'KYWaterWaveView', '~> 1.1.0'
+end
+
+target 'MobileProtector' do
+	shared_pods
+end

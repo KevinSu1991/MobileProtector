@@ -1,0 +1,484 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A5841481EF8137E00B28A09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A5841461EF8137E00B28A09 /* Main.storyboard */; };
+		0A58414D1EF8137E00B28A09 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A58414B1EF8137E00B28A09 /* LaunchScreen.storyboard */; };
+		0A79F2011EF8197E0089D10D /* MainCheckController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A79F2001EF8197E0089D10D /* MainCheckController.swift */; };
+		0A79F2031EF81FFC0089D10D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A79F2021EF81FFC0089D10D /* Assets.xcassets */; };
+		0A79F2051EF820100089D10D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A79F2041EF820100089D10D /* UIKit.framework */; };
+		0A79F2071EF8201A0089D10D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A79F2061EF8201A0089D10D /* Foundation.framework */; };
+		0AB1BBE31EF814DA005D60F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB1BBE21EF814DA005D60F3 /* AppDelegate.swift */; };
+		0AB1BBE91EF8154D005D60F3 /* MobileProtector-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0AB1BBE81EF8154D005D60F3 /* MobileProtector-Info.plist */; };
+		0AB1BBEC1EF815A6005D60F3 /* MobileProtector.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0AB1BBEA1EF815A6005D60F3 /* MobileProtector.debug.xcconfig */; };
+		0AB1BBED1EF815A6005D60F3 /* MobileProtector.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0AB1BBEB1EF815A6005D60F3 /* MobileProtector.release.xcconfig */; };
+		0AB1BBF01EF815EF005D60F3 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AB1BBEF1EF815EF005D60F3 /* StoreKit.framework */; };
+		66C2E52D4E0EC8BA473167CD /* libPods-MobileProtector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 77575B8D2F3C0FED419AA0D8 /* libPods-MobileProtector.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0A58413F1EF8137E00B28A09 /* MobileProtector.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileProtector.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A5841471EF8137E00B28A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A58414C1EF8137E00B28A09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A79F2001EF8197E0089D10D /* MainCheckController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCheckController.swift; sourceTree = "<group>"; };
+		0A79F2021EF81FFC0089D10D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A79F2041EF820100089D10D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0A79F2061EF8201A0089D10D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0AB1BBE21EF814DA005D60F3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0AB1BBE81EF8154D005D60F3 /* MobileProtector-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "MobileProtector-Info.plist"; sourceTree = "<group>"; };
+		0AB1BBEA1EF815A6005D60F3 /* MobileProtector.debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = MobileProtector.debug.xcconfig; sourceTree = "<group>"; };
+		0AB1BBEB1EF815A6005D60F3 /* MobileProtector.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = MobileProtector.release.xcconfig; sourceTree = "<group>"; };
+		0AB1BBEF1EF815EF005D60F3 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0AB1BBF11EF8162B005D60F3 /* MobileProtector.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = MobileProtector.entitlements; sourceTree = "<group>"; };
+		0AB1BBF21EF8166F005D60F3 /* MobileProtectorAppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileProtectorAppConfig.h; sourceTree = "<group>"; };
+		0AB1BBF31EF816D2005D60F3 /* AppConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
+		0AB1BBF41EF81784005D60F3 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		5A89B0DBC749448AA6B445DB /* Pods-MobileProtector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProtector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProtector/Pods-MobileProtector.debug.xcconfig"; sourceTree = "<group>"; };
+		77575B8D2F3C0FED419AA0D8 /* libPods-MobileProtector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileProtector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3EE56DD9F2C50A786AB812E /* Pods-MobileProtector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProtector.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProtector/Pods-MobileProtector.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A58413C1EF8137E00B28A09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A79F2071EF8201A0089D10D /* Foundation.framework in Frameworks */,
+				0A79F2051EF820100089D10D /* UIKit.framework in Frameworks */,
+				66C2E52D4E0EC8BA473167CD /* libPods-MobileProtector.a in Frameworks */,
+				0AB1BBF01EF815EF005D60F3 /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A5841361EF8137E00B28A09 = {
+			isa = PBXGroup;
+			children = (
+				0AB1BBE61EF814FE005D60F3 /* Targets */,
+				0A5841411EF8137E00B28A09 /* MobileProtector */,
+				0A5841401EF8137E00B28A09 /* Products */,
+				6AB94FDF5C2A9D8CC0C1CF5D /* Pods */,
+				3471EC322B09F86C673E32E9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0A5841401EF8137E00B28A09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A58413F1EF8137E00B28A09 /* MobileProtector.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A5841411EF8137E00B28A09 /* MobileProtector */ = {
+			isa = PBXGroup;
+			children = (
+				0AB1BBE01EF814AD005D60F3 /* Base */,
+				0AB1BBDF1EF81493005D60F3 /* Controller */,
+				0A5841461EF8137E00B28A09 /* Main.storyboard */,
+				0A58414B1EF8137E00B28A09 /* LaunchScreen.storyboard */,
+			);
+			path = MobileProtector;
+			sourceTree = "<group>";
+		};
+		0AB1BBDF1EF81493005D60F3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0A79F2001EF8197E0089D10D /* MainCheckController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0AB1BBE01EF814AD005D60F3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				0AB1BBE21EF814DA005D60F3 /* AppDelegate.swift */,
+				0AB1BBF31EF816D2005D60F3 /* AppConfig.h */,
+				0AB1BBF41EF81784005D60F3 /* PrefixHeader.pch */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		0AB1BBE61EF814FE005D60F3 /* Targets */ = {
+			isa = PBXGroup;
+			children = (
+				0AB1BBE71EF8151B005D60F3 /* MobileProtector */,
+			);
+			path = Targets;
+			sourceTree = "<group>";
+		};
+		0AB1BBE71EF8151B005D60F3 /* MobileProtector */ = {
+			isa = PBXGroup;
+			children = (
+				0A79F2021EF81FFC0089D10D /* Assets.xcassets */,
+				0AB1BBF11EF8162B005D60F3 /* MobileProtector.entitlements */,
+				0AB1BBEA1EF815A6005D60F3 /* MobileProtector.debug.xcconfig */,
+				0AB1BBEB1EF815A6005D60F3 /* MobileProtector.release.xcconfig */,
+				0AB1BBE81EF8154D005D60F3 /* MobileProtector-Info.plist */,
+				0AB1BBF21EF8166F005D60F3 /* MobileProtectorAppConfig.h */,
+			);
+			path = MobileProtector;
+			sourceTree = "<group>";
+		};
+		3471EC322B09F86C673E32E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A79F2061EF8201A0089D10D /* Foundation.framework */,
+				0A79F2041EF820100089D10D /* UIKit.framework */,
+				0AB1BBEF1EF815EF005D60F3 /* StoreKit.framework */,
+				77575B8D2F3C0FED419AA0D8 /* libPods-MobileProtector.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6AB94FDF5C2A9D8CC0C1CF5D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A89B0DBC749448AA6B445DB /* Pods-MobileProtector.debug.xcconfig */,
+				B3EE56DD9F2C50A786AB812E /* Pods-MobileProtector.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A58413E1EF8137E00B28A09 /* MobileProtector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A5841511EF8137E00B28A09 /* Build configuration list for PBXNativeTarget "MobileProtector" */;
+			buildPhases = (
+				AFA65545A032CC95A832F024 /* [CP] Check Pods Manifest.lock */,
+				0A58413B1EF8137E00B28A09 /* Sources */,
+				0A58413C1EF8137E00B28A09 /* Frameworks */,
+				0A58413D1EF8137E00B28A09 /* Resources */,
+				6E56DB2D80E3D746C5EF8EC4 /* [CP] Embed Pods Frameworks */,
+				FC953624E0B4186D143A40BF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobileProtector;
+			productName = MobileProtector;
+			productReference = 0A58413F1EF8137E00B28A09 /* MobileProtector.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A5841371EF8137E00B28A09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Safe.360;
+				TargetAttributes = {
+					0A58413E1EF8137E00B28A09 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GPEJUX25C5;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 0A58413A1EF8137E00B28A09 /* Build configuration list for PBXProject "MobileProtector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0A5841361EF8137E00B28A09;
+			productRefGroup = 0A5841401EF8137E00B28A09 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A58413E1EF8137E00B28A09 /* MobileProtector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A58413D1EF8137E00B28A09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A58414D1EF8137E00B28A09 /* LaunchScreen.storyboard in Resources */,
+				0AB1BBEC1EF815A6005D60F3 /* MobileProtector.debug.xcconfig in Resources */,
+				0A5841481EF8137E00B28A09 /* Main.storyboard in Resources */,
+				0AB1BBED1EF815A6005D60F3 /* MobileProtector.release.xcconfig in Resources */,
+				0A79F2031EF81FFC0089D10D /* Assets.xcassets in Resources */,
+				0AB1BBE91EF8154D005D60F3 /* MobileProtector-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E56DB2D80E3D746C5EF8EC4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileProtector/Pods-MobileProtector-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AFA65545A032CC95A832F024 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FC953624E0B4186D143A40BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobileProtector/Pods-MobileProtector-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A58413B1EF8137E00B28A09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AB1BBE31EF814DA005D60F3 /* AppDelegate.swift in Sources */,
+				0A79F2011EF8197E0089D10D /* MainCheckController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0A5841461EF8137E00B28A09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A5841471EF8137E00B28A09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A58414B1EF8137E00B28A09 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A58414C1EF8137E00B28A09 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A58414F1EF8137E00B28A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A5841501EF8137E00B28A09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A5841521EF8137E00B28A09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AB1BBEA1EF815A6005D60F3 /* MobileProtector.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = $ENTITLEMENTS;
+				DEVELOPMENT_TEAM = GPEJUX25C5;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(PREPROCESSORMACROS_DEBUG)",
+				);
+				INFOPLIST_FILE = $PLISTINFO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinsu.ios.mobileprotector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MobileProtector/Base/MobileProtector-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0A5841531EF8137E00B28A09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0AB1BBEB1EF815A6005D60F3 /* MobileProtector.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = $ENTITLEMENTS;
+				DEVELOPMENT_TEAM = GPEJUX25C5;
+				FRAMEWORK_SEARCH_PATHS = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"COCOAPODS=1",
+					"$(PREPROCESSORMACROS_RELEASE)",
+				);
+				INFOPLIST_FILE = $PLISTINFO;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.kevinsu.ios.mobileprotector;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MobileProtector/Base/MobileProtector-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A58413A1EF8137E00B28A09 /* Build configuration list for PBXProject "MobileProtector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A58414F1EF8137E00B28A09 /* Debug */,
+				0A5841501EF8137E00B28A09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A5841511EF8137E00B28A09 /* Build configuration list for PBXNativeTarget "MobileProtector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A5841521EF8137E00B28A09 /* Debug */,
+				0A5841531EF8137E00B28A09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A5841371EF8137E00B28A09 /* Project object */;
+}
