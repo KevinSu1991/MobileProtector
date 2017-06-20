@@ -1,0 +1,14 @@
+//
+//  TARGET_NAME.xcconfig
+//  LikesAndFollowers
+//
+//  Created by KevinSu on 17/3/8.
+//  Copyright © 2017年 John Jiang. All rights reserved.
+//
+#include "../../Pods/Target Support Files/Pods-TARGET_NAME/Pods-TARGET_NAME.release.xcconfig"
+
+PREPROCESSORMACROS_DEBUG = DEBUG=1 TARGET_NAME_UPPERCASE_APP=1
+PREPROCESSORMACROS_RELEASE = NDEBUG=1 TARGET_NAME_UPPERCASE_APP=1
+PLISTINFO = $(SRCROOT)/Targets/TARGET_NAME/TARGET_NAME-Info.plist
+BUNDLEIDENTIFIER = APP_BUNDLE_ID
+ENTITLEMENTS = $(SRCROOT)/Targets/TARGET_NAME/TARGET_NAME.entitlements

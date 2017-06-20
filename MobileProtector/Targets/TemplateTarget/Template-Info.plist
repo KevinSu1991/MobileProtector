@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AppLovinSdkKey</key>
+	<string>nU6hokwGizw4Tg38BysxNBu-HJLt_0FmVMSH4MTnJSso8vwKsnFDy7CDRT5RTKC2heKm0tXKKN6TH0o7n1Kk9W</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -37,6 +39,12 @@
 	</array>
 	<key>CFBundleVersion</key>
 	<string>1.0.0</string>
+	<key>CustomerSupportEmail</key>
+	<string>CUSTOMERSUPPORTEMAIL</string>
+	<key>FacebookAppID</key>
+	<string>443770382480628</string>
+	<key>FacebookDisplayName</key>
+	<string>IOS_APP_NAME</string>
 	<key>ITSAppUsesNonExemptEncryption</key>
 	<false/>
 	<key>LSApplicationQueriesSchemes</key>
@@ -160,6 +168,8 @@
 	<key>UILaunchStoryboardName</key>
 	<string>launch</string>
 	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIMainStoryboardFile~ipad</key>
 	<string>Main</string>
 	<key>UIPrerenderedIcon</key>
 	<string>YES</string>

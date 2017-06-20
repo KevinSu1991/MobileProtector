@@ -2,7 +2,7 @@
 //  AppConfig.h
 //  MobileProtector
 //
-//  Created by KevinSu on 2017/6/19.
+//  Created by KevinSu on 2017/6/20.
 //  Copyright © 2017年 Safe.360. All rights reserved.
 //
 
@@ -14,5 +14,8 @@
 #else
 //Do nothing
 #endif
+
+#define MAIN_CHECKER_DEVICE_ANALYZE     @"Device Analyze"
+#define MAIN_CHECKER_QUICK_SCAN         @"Quick Scan"
 
 #endif /* AppConfig_h */

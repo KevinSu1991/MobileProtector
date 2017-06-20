@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "73C3BDB51F0DB042695DC1A0CDDF6C97CEE5C2B4",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "20BF4929C52C6122968DC5925DF39835F3887182" : 9223372036854775807,
+    "73C3BDB51F0DB042695DC1A0CDDF6C97CEE5C2B4" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1F025B97-54C5-4FDA-9B30-7BDB9710CB34",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "20BF4929C52C6122968DC5925DF39835F3887182" : "MyIosCodes\/",
+    "73C3BDB51F0DB042695DC1A0CDDF6C97CEE5C2B4" : "MobileProtector\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "MobileProtector",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "MobileProtector\/MobileProtector.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/KevinSu1991\/MyIosCodes.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "20BF4929C52C6122968DC5925DF39835F3887182"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/KevinSu1991\/MobileProtector.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "73C3BDB51F0DB042695DC1A0CDDF6C97CEE5C2B4"
+    }
+  ]
+}

@@ -1,14 +1,13 @@
 //
-//  PrefixHeader.pch
+//  MainCheckerHeaderView.h
 //  MobileProtector
 //
 //  Created by KevinSu on 2017/6/20.
 //  Copyright © 2017年 Safe.360. All rights reserved.
 //
 
-#ifndef PrefixHeader_pch
-#define PrefixHeader_pch
+#import <UIKit/UIKit.h>
 
-#include "AppConfig.h"
+@interface MainCheckerHeaderView : UIView
 
-#endif /* PrefixHeader_pch */
+@end

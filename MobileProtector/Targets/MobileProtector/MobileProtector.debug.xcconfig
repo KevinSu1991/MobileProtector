@@ -1,13 +1,14 @@
 //
-//  TARGET_NAME.xcconfig
+//  MobileProtector.xcconfig
 //  LikesAndFollowers
 //
 //  Created by KevinSu on 17/3/8.
 //  Copyright © 2017年 John Jiang. All rights reserved.
 //
 #include "../../Pods/Target Support Files/Pods-MobileProtector/Pods-MobileProtector.debug.xcconfig"
+
 PREPROCESSORMACROS_DEBUG = DEBUG=1 MobileProtector_APP=1
 PREPROCESSORMACROS_RELEASE = NDEBUG=1 MobileProtector_APP=1
 PLISTINFO = $(SRCROOT)/Targets/MobileProtector/MobileProtector-Info.plist
-BUNDLEIDENTIFIER = APP_BUNDLE_ID
+BUNDLEIDENTIFIER = com.kevinsu.ios.mobileprotector
 ENTITLEMENTS = $(SRCROOT)/Targets/MobileProtector/MobileProtector.entitlements
