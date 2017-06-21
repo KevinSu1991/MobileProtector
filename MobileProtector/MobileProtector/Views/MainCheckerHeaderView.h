@@ -10,4 +10,6 @@
 
 @interface MainCheckerHeaderView : UIView
 
+- (void)refreshHeader;
+
 @end

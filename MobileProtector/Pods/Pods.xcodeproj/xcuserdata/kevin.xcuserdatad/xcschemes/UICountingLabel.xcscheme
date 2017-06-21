@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '9C7BC4A6B2EDDFBDDA6888B733ED90FA'
-               BlueprintName = 'Pods-MobileProtector'
+               BlueprintIdentifier = '4D45883C2CA4F63F70B7B574AB10BC51'
+               BlueprintName = 'UICountingLabel'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'libPods-MobileProtector.a'>
+               BuildableName = 'libUICountingLabel.a'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

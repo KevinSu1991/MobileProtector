@@ -29,25 +29,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>UICountingLabel.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>4D45883C2CA4F63F70B7B574AB10BC51</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4F21422BA869BA14BBB51B2BE09EB293</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>55E3CFFEDC2629EE0C17B343EC00595B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>97AF03835860F1A07CC9D8DB414DB207</key>
+		<key>9C7BC4A6B2EDDFBDDA6888B733ED90FA</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>9E033EDB5EC0819481B0546434FA577B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AB007ED629D3BAB3533198A203028BE3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

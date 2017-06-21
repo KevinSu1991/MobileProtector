@@ -20,6 +20,7 @@
 		0A874BE21EF970BA001F5186 /* MainCheckerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A874BE11EF970BA001F5186 /* MainCheckerHeaderView.m */; };
 		0A874BE41EF970C7001F5186 /* MainCheckerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A874BE31EF970C7001F5186 /* MainCheckerHeaderView.xib */; };
 		0A874BE81EF97A80001F5186 /* DeviceAnalyzeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A874BE71EF97A80001F5186 /* DeviceAnalyzeManager.m */; };
+		0AC762B91EFAB10200135372 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC762B11EFAB10200135372 /* UIDevice-Hardware.m */; };
 		53BEB9F9BD3D32F592CC2076 /* libPods-MobileProtector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CEEEDBCBB31DB9CEFD4A07F /* libPods-MobileProtector.a */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +37,7 @@
 		0A0E4D771EF96B9800D10709 /* MobileProtector.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = MobileProtector.entitlements; sourceTree = "<group>"; };
 		0A0E4D781EF96B9800D10709 /* MobileProtector.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = MobileProtector.release.xcconfig; sourceTree = "<group>"; };
 		0A0E4D791EF96B9800D10709 /* MobileProtectorAppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileProtectorAppConfig.h; sourceTree = "<group>"; };
+		0A5503321EFAB6A800D5F6A4 /* DeviceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceKit.h; sourceTree = "<group>"; };
 		0A874BD51EF96D70001F5186 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0A874BD61EF96D90001F5186 /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		0A874BD71EF96DE3001F5186 /* MainCheckerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCheckerController.h; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		0A874BE31EF970C7001F5186 /* MainCheckerHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCheckerHeaderView.xib; sourceTree = "<group>"; };
 		0A874BE61EF97A80001F5186 /* DeviceAnalyzeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceAnalyzeManager.h; sourceTree = "<group>"; };
 		0A874BE71EF97A80001F5186 /* DeviceAnalyzeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceAnalyzeManager.m; sourceTree = "<group>"; };
+		0AC762B01EFAB10200135372 /* UIDevice-Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Hardware.h"; sourceTree = "<group>"; };
+		0AC762B11EFAB10200135372 /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Hardware.m"; sourceTree = "<group>"; };
 		0CEEEDBCBB31DB9CEFD4A07F /* libPods-MobileProtector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileProtector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		598B72CA3B592C808A020D7F /* Pods-MobileProtector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProtector.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProtector/Pods-MobileProtector.release.xcconfig"; sourceTree = "<group>"; };
 		BFD97981BF54FD3D7B0092D2 /* Pods-MobileProtector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProtector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProtector/Pods-MobileProtector.debug.xcconfig"; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 		0A0E4D471EF969B800D10709 /* MobileProtector */ = {
 			isa = PBXGroup;
 			children = (
+				0A8554901EFA7E52002FC50A /* Models */,
 				0A874BE51EF97799001F5186 /* Manager */,
 				0A874BDF1EF970A8001F5186 /* Views */,
 				0A0E4D621EF96A2600D10709 /* Base */,
@@ -147,9 +152,17 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		0A8554901EFA7E52002FC50A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0A874BDA1EF97052001F5186 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				0AC762AD1EFAB10200135372 /* DeviceKit */,
 				0A874BDB1EF97074001F5186 /* WaterWave */,
 			);
 			path = Libs;
@@ -182,6 +195,17 @@
 				0A874BE71EF97A80001F5186 /* DeviceAnalyzeManager.m */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		0AC762AD1EFAB10200135372 /* DeviceKit */ = {
+			isa = PBXGroup;
+			children = (
+				0AC762B01EFAB10200135372 /* UIDevice-Hardware.h */,
+				0AC762B11EFAB10200135372 /* UIDevice-Hardware.m */,
+				0A5503321EFAB6A800D5F6A4 /* DeviceKit.h */,
+			);
+			name = DeviceKit;
+			path = ../../../MyIosCodes/DeviceKit;
 			sourceTree = "<group>";
 		};
 		2954A908DAFB35C27C4EFE53 /* Frameworks */ = {
@@ -334,6 +358,7 @@
 				0A0E4D4A1EF969B800D10709 /* main.m in Sources */,
 				0A874BE21EF970BA001F5186 /* MainCheckerHeaderView.m in Sources */,
 				0A874BDE1EF97074001F5186 /* VWWWaterView.m in Sources */,
+				0AC762B91EFAB10200135372 /* UIDevice-Hardware.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +494,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinsu.ios.mobileprotector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -490,6 +516,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kevinsu.ios.mobileprotector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

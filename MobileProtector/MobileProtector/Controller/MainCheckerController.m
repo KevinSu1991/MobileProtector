@@ -45,16 +45,13 @@ static NSString* CELLIDENTIFIER = @"MainCheckerCell";
 
 - (void)initTableHeaderView {
     self.headerView = [[[NSBundle mainBundle] loadNibNamed:@"MainCheckerHeaderView" owner:self options:nil] lastObject];
-    self.headerView.frame = CGRectMake(0, 0, self.view.frame.size.width, 240);
+    self.headerView.backgroundColor = [UIColor blueColor];
+    self.headerView.frame = CGRectMake(0, 0, self.view.frame.size.width, 250);
     self.headerView.backgroundColor = [UIColor colorWithRed:86/255.0f green:202/255.0f blue:139/255.0f alpha:1];
-    VWWWaterView* waterView = [[VWWWaterView alloc] initWithFrame:self.headerView.bounds];
+    VWWWaterView* waterView = [[VWWWaterView alloc] initWithFrame:self.headerView.frame];
     [self.headerView addSubview:waterView];
-    self.headerView.translatesAutoresizingMaskIntoConstraints = NO;
-    [self.headerView addConstraint:[NSLayoutConstraint constraintWithItem:waterView attribute:NSLayoutAttributeTop relatedBy:NSLayoutRelationEqual toItem:waterView.superview attribute:NSLayoutAttributeTop multiplier:1 constant:0]];
-    [self.headerView addConstraint:[NSLayoutConstraint constraintWithItem:waterView attribute:NSLayoutAttributeLeading relatedBy:NSLayoutRelationEqual toItem:waterView.superview attribute:NSLayoutAttributeLeading multiplier:1 constant:0]];
-    [self.headerView addConstraint:[NSLayoutConstraint constraintWithItem:waterView attribute:NSLayoutAttributeTrailing relatedBy:NSLayoutRelationEqual toItem:waterView.superview attribute:NSLayoutAttributeTrailing multiplier:1 constant:0]];
-    [self.headerView addConstraint:[NSLayoutConstraint constraintWithItem:waterView attribute:NSLayoutAttributeBottom relatedBy:NSLayoutRelationEqual toItem:waterView.superview attribute:NSLayoutAttributeBottom multiplier:1 constant:0]];
     self.tableView.tableHeaderView = self.headerView;
+    [self.headerView refreshHeader];
 }
 
 - (void)initData {

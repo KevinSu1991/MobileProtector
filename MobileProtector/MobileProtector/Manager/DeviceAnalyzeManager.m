@@ -19,4 +19,7 @@
     return sharedManager;
 }
 
+- (void)startAnalyze {
+    
+}
 @end

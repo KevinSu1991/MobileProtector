@@ -8,6 +8,7 @@ pod 'JSONModel'
 pod 'SDWebImage'
 
 pod 'KYWaterWaveView', '~> 1.1.0'
+pod 'UICountingLabel'
 end
 
 target 'MobileProtector' do

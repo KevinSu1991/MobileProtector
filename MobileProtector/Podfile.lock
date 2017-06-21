@@ -19,19 +19,22 @@ PODS:
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
+  - UICountingLabel (1.4.0)
 
 DEPENDENCIES:
   - AFNetworking
   - JSONModel
   - KYWaterWaveView (~> 1.1.0)
   - SDWebImage
+  - UICountingLabel
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   JSONModel: 840bc0fcffb24b8454d2c026bf26fea454b8e98d
   KYWaterWaveView: ab639bd6f41398b160b04b02441dccc20425a855
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
+  UICountingLabel: ed5ce5b6d5ef278ff40d99cfa49577a30ab0c87b
 
-PODFILE CHECKSUM: 11efa96ff9dcedd51589a6de3db570d8cc8c7603
+PODFILE CHECKSUM: 39daa4b725665c806178a994ee4ae8988ee1c89d
 
 COCOAPODS: 1.2.1
