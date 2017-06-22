@@ -7,12 +7,13 @@
 //
 
 #import "DeviceHardwareInfoController.h"
+#import "DeviceHarewareHeaderView.h"
 
 #define CELL_IDENTIFIER @"DeviceInfoCell"
 
 @interface DeviceHardwareInfoController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+@property (nonatomic, strong) DeviceHarewareHeaderView* headerView;
 @end
 
 @implementation DeviceHardwareInfoController
@@ -20,6 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.leftBarButtonItem = [ViewControllerUtils createNavigationBackButton];
     [self initTableView];
 }
 
@@ -31,6 +33,9 @@
 - (void)initTableView {
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.headerView = [[[NSBundle mainBundle] loadNibNamed:@"DeviceHarewareHeaderView" owner:self options:nil] lastObject];
+    self.headerView.frame = CGRectMake(0, 0, self.tableView.frame.size.width, 120);
+    self.tableView.tableHeaderView = self.headerView;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 

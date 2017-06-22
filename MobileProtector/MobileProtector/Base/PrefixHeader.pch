@@ -14,5 +14,7 @@
 #include "DeviceKit.h"
 #include "AppUtils.h"
 #include "Dlog.h"
+#include "AppThemeManager.h"
+#include "ViewControllerUtils.h"
 
 #endif /* PrefixHeader_pch */

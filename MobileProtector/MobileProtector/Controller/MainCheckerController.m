@@ -26,6 +26,7 @@ static NSString* CELLIDENTIFIER = @"MainCheckerCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.navigationItem.title = NSLocalizedString(@"Mobile Protector", nil);
     [self initData];
     [self initTableView];
 }
