@@ -12,14 +12,19 @@
 		0A0E4D551EF969B800D10709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A0E4D541EF969B800D10709 /* Assets.xcassets */; };
 		0A0E4D581EF969B800D10709 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A0E4D561EF969B800D10709 /* LaunchScreen.storyboard */; };
 		0A0E4D661EF96A8E00D10709 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E4D641EF96A8E00D10709 /* AppDelegate.m */; };
-		0A0E4D7A1EF96B9800D10709 /* MobileProtector-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A0E4D751EF96B9800D10709 /* MobileProtector-Info.plist */; };
 		0A0E4D7B1EF96B9800D10709 /* MobileProtector.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0A0E4D761EF96B9800D10709 /* MobileProtector.debug.xcconfig */; };
 		0A0E4D7C1EF96B9800D10709 /* MobileProtector.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0A0E4D781EF96B9800D10709 /* MobileProtector.release.xcconfig */; };
+		0A2A64501EFAC12B00B01E3E /* MainCheckerFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A644F1EFAC12B00B01E3E /* MainCheckerFooterView.m */; };
+		0A2A64521EFAC13100B01E3E /* MainCheckerFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2A64511EFAC13100B01E3E /* MainCheckerFooterView.xib */; };
 		0A874BD91EF96DE3001F5186 /* MainCheckerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A874BD81EF96DE3001F5186 /* MainCheckerController.m */; };
 		0A874BDE1EF97074001F5186 /* VWWWaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A874BDD1EF97074001F5186 /* VWWWaterView.m */; };
 		0A874BE21EF970BA001F5186 /* MainCheckerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A874BE11EF970BA001F5186 /* MainCheckerHeaderView.m */; };
 		0A874BE41EF970C7001F5186 /* MainCheckerHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A874BE31EF970C7001F5186 /* MainCheckerHeaderView.xib */; };
 		0A874BE81EF97A80001F5186 /* DeviceAnalyzeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A874BE71EF97A80001F5186 /* DeviceAnalyzeManager.m */; };
+		0A9A1BCF1EFB642400B97B33 /* DeviceHardwareInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A1BCE1EFB642400B97B33 /* DeviceHardwareInfoController.m */; };
+		0A9A1BD71EFB67C800B97B33 /* AppUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A1BD21EFB67C800B97B33 /* AppUtils.m */; };
+		0A9A1BD81EFB67C800B97B33 /* EncryptionUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A1BD41EFB67C800B97B33 /* EncryptionUtils.m */; };
+		0A9A1BD91EFB67C800B97B33 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A1BD61EFB67C800B97B33 /* Reachability.m */; };
 		0AC762B91EFAB10200135372 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC762B11EFAB10200135372 /* UIDevice-Hardware.m */; };
 		53BEB9F9BD3D32F592CC2076 /* libPods-MobileProtector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CEEEDBCBB31DB9CEFD4A07F /* libPods-MobileProtector.a */; };
 /* End PBXBuildFile section */
@@ -37,6 +42,9 @@
 		0A0E4D771EF96B9800D10709 /* MobileProtector.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = MobileProtector.entitlements; sourceTree = "<group>"; };
 		0A0E4D781EF96B9800D10709 /* MobileProtector.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = MobileProtector.release.xcconfig; sourceTree = "<group>"; };
 		0A0E4D791EF96B9800D10709 /* MobileProtectorAppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileProtectorAppConfig.h; sourceTree = "<group>"; };
+		0A2A644E1EFAC12B00B01E3E /* MainCheckerFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainCheckerFooterView.h; sourceTree = "<group>"; };
+		0A2A644F1EFAC12B00B01E3E /* MainCheckerFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainCheckerFooterView.m; sourceTree = "<group>"; };
+		0A2A64511EFAC13100B01E3E /* MainCheckerFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCheckerFooterView.xib; sourceTree = "<group>"; };
 		0A5503321EFAB6A800D5F6A4 /* DeviceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceKit.h; sourceTree = "<group>"; };
 		0A874BD51EF96D70001F5186 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0A874BD61EF96D90001F5186 /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
@@ -49,6 +57,15 @@
 		0A874BE31EF970C7001F5186 /* MainCheckerHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainCheckerHeaderView.xib; sourceTree = "<group>"; };
 		0A874BE61EF97A80001F5186 /* DeviceAnalyzeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceAnalyzeManager.h; sourceTree = "<group>"; };
 		0A874BE71EF97A80001F5186 /* DeviceAnalyzeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceAnalyzeManager.m; sourceTree = "<group>"; };
+		0A9A1BCD1EFB642400B97B33 /* DeviceHardwareInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceHardwareInfoController.h; sourceTree = "<group>"; };
+		0A9A1BCE1EFB642400B97B33 /* DeviceHardwareInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceHardwareInfoController.m; sourceTree = "<group>"; };
+		0A9A1BD11EFB67C800B97B33 /* AppUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppUtils.h; sourceTree = "<group>"; };
+		0A9A1BD21EFB67C800B97B33 /* AppUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppUtils.m; sourceTree = "<group>"; };
+		0A9A1BD31EFB67C800B97B33 /* EncryptionUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptionUtils.h; sourceTree = "<group>"; };
+		0A9A1BD41EFB67C800B97B33 /* EncryptionUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptionUtils.m; sourceTree = "<group>"; };
+		0A9A1BD51EFB67C800B97B33 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		0A9A1BD61EFB67C800B97B33 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		0A9A1BDB1EFB685B00B97B33 /* Dlog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dlog.h; sourceTree = "<group>"; };
 		0AC762B01EFAB10200135372 /* UIDevice-Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Hardware.h"; sourceTree = "<group>"; };
 		0AC762B11EFAB10200135372 /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Hardware.m"; sourceTree = "<group>"; };
 		0CEEEDBCBB31DB9CEFD4A07F /* libPods-MobileProtector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileProtector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +154,8 @@
 			children = (
 				0A874BD71EF96DE3001F5186 /* MainCheckerController.h */,
 				0A874BD81EF96DE3001F5186 /* MainCheckerController.m */,
+				0A9A1BCD1EFB642400B97B33 /* DeviceHardwareInfoController.h */,
+				0A9A1BCE1EFB642400B97B33 /* DeviceHardwareInfoController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,6 +181,8 @@
 		0A874BDA1EF97052001F5186 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				0A9A1BDA1EFB685B00B97B33 /* Logging */,
+				0A9A1BD01EFB67C800B97B33 /* Utils */,
 				0AC762AD1EFAB10200135372 /* DeviceKit */,
 				0A874BDB1EF97074001F5186 /* WaterWave */,
 			);
@@ -184,6 +205,9 @@
 				0A874BE01EF970BA001F5186 /* MainCheckerHeaderView.h */,
 				0A874BE11EF970BA001F5186 /* MainCheckerHeaderView.m */,
 				0A874BE31EF970C7001F5186 /* MainCheckerHeaderView.xib */,
+				0A2A644E1EFAC12B00B01E3E /* MainCheckerFooterView.h */,
+				0A2A644F1EFAC12B00B01E3E /* MainCheckerFooterView.m */,
+				0A2A64511EFAC13100B01E3E /* MainCheckerFooterView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -195,6 +219,29 @@
 				0A874BE71EF97A80001F5186 /* DeviceAnalyzeManager.m */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		0A9A1BD01EFB67C800B97B33 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				0A9A1BD11EFB67C800B97B33 /* AppUtils.h */,
+				0A9A1BD21EFB67C800B97B33 /* AppUtils.m */,
+				0A9A1BD31EFB67C800B97B33 /* EncryptionUtils.h */,
+				0A9A1BD41EFB67C800B97B33 /* EncryptionUtils.m */,
+				0A9A1BD51EFB67C800B97B33 /* Reachability.h */,
+				0A9A1BD61EFB67C800B97B33 /* Reachability.m */,
+			);
+			name = Utils;
+			path = ../../../MyIosCodes/Utils;
+			sourceTree = "<group>";
+		};
+		0A9A1BDA1EFB685B00B97B33 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				0A9A1BDB1EFB685B00B97B33 /* Dlog.h */,
+			);
+			name = Logging;
+			path = ../../../MyIosCodes/Logging;
 			sourceTree = "<group>";
 		};
 		0AC762AD1EFAB10200135372 /* DeviceKit */ = {
@@ -293,7 +340,7 @@
 				0A874BE41EF970C7001F5186 /* MainCheckerHeaderView.xib in Resources */,
 				0A0E4D531EF969B800D10709 /* Main.storyboard in Resources */,
 				0A0E4D7C1EF96B9800D10709 /* MobileProtector.release.xcconfig in Resources */,
-				0A0E4D7A1EF96B9800D10709 /* MobileProtector-Info.plist in Resources */,
+				0A2A64521EFAC13100B01E3E /* MainCheckerFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,12 +399,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A9A1BD81EFB67C800B97B33 /* EncryptionUtils.m in Sources */,
 				0A874BD91EF96DE3001F5186 /* MainCheckerController.m in Sources */,
 				0A0E4D661EF96A8E00D10709 /* AppDelegate.m in Sources */,
+				0A9A1BCF1EFB642400B97B33 /* DeviceHardwareInfoController.m in Sources */,
 				0A874BE81EF97A80001F5186 /* DeviceAnalyzeManager.m in Sources */,
 				0A0E4D4A1EF969B800D10709 /* main.m in Sources */,
 				0A874BE21EF970BA001F5186 /* MainCheckerHeaderView.m in Sources */,
 				0A874BDE1EF97074001F5186 /* VWWWaterView.m in Sources */,
+				0A9A1BD71EFB67C800B97B33 /* AppUtils.m in Sources */,
+				0A2A64501EFAC12B00B01E3E /* MainCheckerFooterView.m in Sources */,
+				0A9A1BD91EFB67C800B97B33 /* Reachability.m in Sources */,
 				0AC762B91EFAB10200135372 /* UIDevice-Hardware.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

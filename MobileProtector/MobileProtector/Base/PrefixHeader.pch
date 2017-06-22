@@ -12,5 +12,7 @@
 #include "AppConfig.h"
 #include "DeviceAnalyzeManager.h"
 #include "DeviceKit.h"
+#include "AppUtils.h"
+#include "Dlog.h"
 
 #endif /* PrefixHeader_pch */

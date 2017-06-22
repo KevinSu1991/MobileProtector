@@ -15,7 +15,8 @@
 //Do nothing
 #endif
 
-#define MAIN_CHECKER_DEVICE_ANALYZE     @"Device Analyze"
-#define MAIN_CHECKER_QUICK_SCAN         @"Quick Scan"
+#define MAIN_CHECKER_DEVICE_ANALYZE                 @"Device Analyze"
+#define MAIN_CHECKER_QUICK_SCAN                     @"Quick Scan"
+#define MAIN_CHECKER_ADDRESSBOOK_OPTIMIZATION       @"Address Book Optimization"
 
 #endif /* AppConfig_h */
