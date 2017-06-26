@@ -23,9 +23,20 @@ static NSString* CELLIDENTIFIER = @"MainCheckerCell";
     NSArray* dataSource;
 }
 
+- (void)dealloc {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)cpuStateUpdated {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.footerView reload];
+    });
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(cpuStateUpdated) name:kNotificationCpuStateUpdated object:nil];
     self.navigationItem.title = NSLocalizedString(@"Mobile Protector", nil);
     [self initData];
     [self initTableView];
@@ -61,6 +72,7 @@ static NSString* CELLIDENTIFIER = @"MainCheckerCell";
     self.footerView = [[[NSBundle mainBundle] loadNibNamed:@"MainCheckerFooterView" owner:self options:nil] lastObject];
     self.footerView.frame = CGRectMake(0, 0, self.view.frame.size.width, 130);
     self.tableView.tableFooterView = self.footerView;
+    [self.footerView reload];
 }
 
 - (void)initData {

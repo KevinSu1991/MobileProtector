@@ -9,5 +9,9 @@
 #import <UIKit/UIKit.h>
 
 @interface MainCheckerFooterView : UIView
+@property (weak, nonatomic) IBOutlet UILabel *userMemoryLabel;
+@property (weak, nonatomic) IBOutlet UILabel *storageLabel;
+@property (weak, nonatomic) IBOutlet UILabel *cpuLabel;
 
+- (void)reload;
 @end

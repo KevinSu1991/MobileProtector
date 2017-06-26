@@ -14,6 +14,7 @@
 		0A0E4D661EF96A8E00D10709 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A0E4D641EF96A8E00D10709 /* AppDelegate.m */; };
 		0A0E4D7B1EF96B9800D10709 /* MobileProtector.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0A0E4D761EF96B9800D10709 /* MobileProtector.debug.xcconfig */; };
 		0A0E4D7C1EF96B9800D10709 /* MobileProtector.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0A0E4D781EF96B9800D10709 /* MobileProtector.release.xcconfig */; };
+		0A1931811F014B770054A4A4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1931801F014B770054A4A4 /* CoreTelephony.framework */; };
 		0A233AA41EFBB516002A6853 /* DeviceHarewareHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A233AA31EFBB516002A6853 /* DeviceHarewareHeaderView.m */; };
 		0A233AA61EFBB51D002A6853 /* DeviceHarewareHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A233AA51EFBB51D002A6853 /* DeviceHarewareHeaderView.xib */; };
 		0A2A64501EFAC12B00B01E3E /* MainCheckerFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A644F1EFAC12B00B01E3E /* MainCheckerFooterView.m */; };
@@ -31,6 +32,7 @@
 		0A9A1BE41EFBAD2300B97B33 /* RootNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A1BE31EFBAD2300B97B33 /* RootNavViewController.m */; };
 		0A9A1BE71EFBAF6B00B97B33 /* ViewControllerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9A1BE61EFBAF6B00B97B33 /* ViewControllerUtils.m */; };
 		0AC762B91EFAB10200135372 /* UIDevice-Hardware.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AC762B11EFAB10200135372 /* UIDevice-Hardware.m */; };
+		0AF3BE151EFE14A8009A0B73 /* DeviceManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3BE141EFE14A8009A0B73 /* DeviceManager.m */; };
 		53BEB9F9BD3D32F592CC2076 /* libPods-MobileProtector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CEEEDBCBB31DB9CEFD4A07F /* libPods-MobileProtector.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,7 @@
 		0A0E4D771EF96B9800D10709 /* MobileProtector.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = MobileProtector.entitlements; sourceTree = "<group>"; };
 		0A0E4D781EF96B9800D10709 /* MobileProtector.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = MobileProtector.release.xcconfig; sourceTree = "<group>"; };
 		0A0E4D791EF96B9800D10709 /* MobileProtectorAppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileProtectorAppConfig.h; sourceTree = "<group>"; };
+		0A1931801F014B770054A4A4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		0A233AA21EFBB516002A6853 /* DeviceHarewareHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceHarewareHeaderView.h; sourceTree = "<group>"; };
 		0A233AA31EFBB516002A6853 /* DeviceHarewareHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceHarewareHeaderView.m; sourceTree = "<group>"; };
 		0A233AA51EFBB51D002A6853 /* DeviceHarewareHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceHarewareHeaderView.xib; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 		0A9A1BE61EFBAF6B00B97B33 /* ViewControllerUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerUtils.m; sourceTree = "<group>"; };
 		0AC762B01EFAB10200135372 /* UIDevice-Hardware.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice-Hardware.h"; sourceTree = "<group>"; };
 		0AC762B11EFAB10200135372 /* UIDevice-Hardware.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice-Hardware.m"; sourceTree = "<group>"; };
+		0AF3BE131EFE14A8009A0B73 /* DeviceManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceManager.h; sourceTree = "<group>"; };
+		0AF3BE141EFE14A8009A0B73 /* DeviceManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceManager.m; sourceTree = "<group>"; };
 		0CEEEDBCBB31DB9CEFD4A07F /* libPods-MobileProtector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-MobileProtector.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		598B72CA3B592C808A020D7F /* Pods-MobileProtector.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProtector.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProtector/Pods-MobileProtector.release.xcconfig"; sourceTree = "<group>"; };
 		BFD97981BF54FD3D7B0092D2 /* Pods-MobileProtector.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileProtector.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobileProtector/Pods-MobileProtector.debug.xcconfig"; sourceTree = "<group>"; };
@@ -92,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1931811F014B770054A4A4 /* CoreTelephony.framework in Frameworks */,
 				53BEB9F9BD3D32F592CC2076 /* libPods-MobileProtector.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +279,8 @@
 				0AC762B01EFAB10200135372 /* UIDevice-Hardware.h */,
 				0AC762B11EFAB10200135372 /* UIDevice-Hardware.m */,
 				0A5503321EFAB6A800D5F6A4 /* DeviceKit.h */,
+				0AF3BE131EFE14A8009A0B73 /* DeviceManager.h */,
+				0AF3BE141EFE14A8009A0B73 /* DeviceManager.m */,
 			);
 			name = DeviceKit;
 			path = ../../../MyIosCodes/DeviceKit;
@@ -281,6 +289,7 @@
 		2954A908DAFB35C27C4EFE53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A1931801F014B770054A4A4 /* CoreTelephony.framework */,
 				0CEEEDBCBB31DB9CEFD4A07F /* libPods-MobileProtector.a */,
 			);
 			name = Frameworks;
@@ -431,6 +440,7 @@
 				0A9A1BCF1EFB642400B97B33 /* DeviceHardwareInfoController.m in Sources */,
 				0A874BE81EF97A80001F5186 /* DeviceAnalyzeManager.m in Sources */,
 				0A0E4D4A1EF969B800D10709 /* main.m in Sources */,
+				0AF3BE151EFE14A8009A0B73 /* DeviceManager.m in Sources */,
 				0A233AA41EFBB516002A6853 /* DeviceHarewareHeaderView.m in Sources */,
 				0A874BE21EF970BA001F5186 /* MainCheckerHeaderView.m in Sources */,
 				0A874BDE1EF97074001F5186 /* VWWWaterView.m in Sources */,
