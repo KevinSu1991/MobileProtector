@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QQq-RB-gCq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.17" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="QQq-RB-gCq">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -33,7 +34,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wgW-lt-h6U">
@@ -68,23 +69,65 @@
                         <viewControllerLayoutGuide type="bottom" id="GZi-n3-mmq"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nak-R7-uCd">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S0O-PG-3ka">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="150" width="375" height="453"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EuI-cw-Xdr" customClass="DeviceHarewareHeaderView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEZ-x0-ARY">
+                                        <rect key="frame" x="20" y="50" width="97.5" height="30"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="System Version : ios11.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KCE-hC-eli">
+                                        <rect key="frame" x="20" y="88" width="182.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name : MobileProtector" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeL-rp-Skg">
+                                        <rect key="frame" x="20" y="116.5" width="181.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="wEZ-x0-ARY" firstAttribute="top" secondItem="EuI-cw-Xdr" secondAttribute="top" constant="50" id="5KG-Ha-ALP"/>
+                                    <constraint firstItem="KCE-hC-eli" firstAttribute="leading" secondItem="wEZ-x0-ARY" secondAttribute="leading" id="Ax3-WL-u6u"/>
+                                    <constraint firstItem="wEZ-x0-ARY" firstAttribute="leading" secondItem="EuI-cw-Xdr" secondAttribute="leading" constant="20" id="Rsv-a5-FTg"/>
+                                    <constraint firstItem="KCE-hC-eli" firstAttribute="top" secondItem="wEZ-x0-ARY" secondAttribute="bottom" constant="8" id="ZLv-kj-onj"/>
+                                    <constraint firstItem="TeL-rp-Skg" firstAttribute="top" secondItem="KCE-hC-eli" secondAttribute="bottom" constant="8" id="ngH-3j-JVs"/>
+                                    <constraint firstItem="TeL-rp-Skg" firstAttribute="leading" secondItem="wEZ-x0-ARY" secondAttribute="leading" id="qLE-5k-CYu"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="deviceNameLabel" destination="TeL-rp-Skg" id="Lc5-Tk-Fo2"/>
+                                    <outlet property="deviceSysVersionLabel" destination="KCE-hC-eli" id="s7V-9V-7nF"/>
+                                    <outlet property="deviceTypeLabel" destination="wEZ-x0-ARY" id="woa-2b-7LH"/>
+                                </connections>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="S0O-PG-3ka" firstAttribute="top" secondItem="Pf6-oC-rRr" secondAttribute="bottom" id="H4g-Uo-GfV"/>
+                            <constraint firstAttribute="trailing" secondItem="EuI-cw-Xdr" secondAttribute="trailing" id="5gX-1a-XHl"/>
+                            <constraint firstItem="S0O-PG-3ka" firstAttribute="top" secondItem="Pf6-oC-rRr" secondAttribute="bottom" constant="150" id="H4g-Uo-GfV"/>
                             <constraint firstItem="GZi-n3-mmq" firstAttribute="top" secondItem="S0O-PG-3ka" secondAttribute="bottom" id="HMa-wJ-VFt"/>
+                            <constraint firstItem="EuI-cw-Xdr" firstAttribute="leading" secondItem="nak-R7-uCd" secondAttribute="leading" id="UxK-3E-Ogy"/>
+                            <constraint firstItem="S0O-PG-3ka" firstAttribute="top" secondItem="EuI-cw-Xdr" secondAttribute="bottom" id="Ywn-Sy-fEB"/>
                             <constraint firstItem="S0O-PG-3ka" firstAttribute="leading" secondItem="nak-R7-uCd" secondAttribute="leading" id="dk0-BB-KJt"/>
+                            <constraint firstItem="EuI-cw-Xdr" firstAttribute="top" secondItem="Pf6-oC-rRr" secondAttribute="bottom" id="h1q-CV-dow"/>
                             <constraint firstAttribute="trailing" secondItem="S0O-PG-3ka" secondAttribute="trailing" id="khd-7u-bHw"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="headerView" destination="EuI-cw-Xdr" id="atN-ve-kgk"/>
                         <outlet property="tableView" destination="S0O-PG-3ka" id="FkL-nh-klv"/>
                     </connections>
                 </viewController>

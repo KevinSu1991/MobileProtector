@@ -10,6 +10,4 @@
 
 @interface ViewControllerUtils : NSObject
 
-+ (UIBarButtonItem*)createNavigationBackButton;
-
 @end

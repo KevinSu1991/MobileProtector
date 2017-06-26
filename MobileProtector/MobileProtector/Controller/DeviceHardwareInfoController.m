@@ -16,7 +16,7 @@
 
 @interface DeviceHardwareInfoController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (nonatomic, strong) DeviceHarewareHeaderView* headerView;
+@property (nonatomic, strong) IBOutlet DeviceHarewareHeaderView* headerView;
 @end
 
 @implementation DeviceHardwareInfoController
@@ -24,7 +24,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.navigationItem.leftBarButtonItem = [ViewControllerUtils createNavigationBackButton];
+    [self.headerView loadBaseUI];
     [self initTableView];
 }
 
@@ -36,9 +36,6 @@
 - (void)initTableView {
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
-    self.headerView = [[[NSBundle mainBundle] loadNibNamed:@"DeviceHarewareHeaderView" owner:self options:nil] lastObject];
-    self.headerView.frame = CGRectMake(0, 0, self.tableView.frame.size.width, 120);
-    self.tableView.tableHeaderView = self.headerView;
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
 }
 
@@ -50,9 +47,9 @@
     if (section == 0) {
         return 2;
     } else if (section == 1) {
-        return 2;
-    } else if (section == 2) {
         return 3;
+    } else if (section == 2) {
+        return 16;
     }
     return 0;
 }
@@ -107,17 +104,63 @@
                 //Network Type
                 title = NSLocalizedString(@"Network Type", nil);
                 detialInfo = [AppUtils networkString];
+            } else if (row == 2) {
+                //Mac Address
+                title = NSLocalizedString(@"Mac Address", nil);
+                detialInfo = [UIDevice currentDevice].macaddress;
             }
             break;
         }
         case 2:
         {
             if (row == 0) {
-                //Cpu Type
-                title = NSLocalizedString(@"CPU Type", nil);
+                title = NSLocalizedString(@"Cpu", nil);
                 detialInfo = [DeviceManager getCPUType];
             } else if (row == 1) {
-                
+                title = NSLocalizedString(@"Cpu Cores", nil);
+                detialInfo = [DeviceManager getCpuCores];
+            } else if (row == 2) {
+                title = NSLocalizedString(@"Cpu Arch", nil);
+                detialInfo = [DeviceManager getCpuArch];
+            } else if (row == 3) {
+                title = NSLocalizedString(@"Cpu Clock", nil);
+                detialInfo = [DeviceManager getCpuClock];
+            } else if (row == 4) {
+                title = NSLocalizedString(@"Gpu", nil);
+                detialInfo = [DeviceManager getGpu];
+            } else if (row == 5) {
+                title = NSLocalizedString(@"Gpu Cores", nil);
+                detialInfo = [DeviceManager getGpuCores];
+            } else if (row == 6) {
+                title = NSLocalizedString(@"Gpu Clock", nil);
+                detialInfo = [DeviceManager getGpuClock];
+            } else if (row == 7) {
+                title = NSLocalizedString(@"Ram", nil);
+                detialInfo = [DeviceManager getRAM];
+            } else if (row == 8) {
+                title = NSLocalizedString(@"Mem", nil);
+                detialInfo = [DeviceManager memType];
+            } else if (row == 9) {
+                title = NSLocalizedString(@"Mem Speed", nil);
+                detialInfo = [DeviceManager memSpeed];
+            } else if (row == 10) {
+                title = NSLocalizedString(@"Screen Res", nil);
+                detialInfo = [DeviceManager screenRes];
+            } else if (row == 11) {
+                title = NSLocalizedString(@"Screen Size", nil);
+                detialInfo = [DeviceManager screenSize];
+            } else if (row == 12) {
+                title = NSLocalizedString(@"Lastest OS Version", nil);
+                detialInfo = [DeviceManager lastestOSver];
+            } else if (row == 13) {
+                title = NSLocalizedString(@"Motion Coprocessor", nil);
+                detialInfo = [DeviceManager motionCoprocessor];
+            } else if (row == 14) {
+                title = NSLocalizedString(@"SoC", nil);
+                detialInfo = [DeviceManager soc];
+            } else if (row == 15) {
+                title = NSLocalizedString(@"Year", nil);
+                detialInfo = [DeviceManager year];
             }
             break;
         }

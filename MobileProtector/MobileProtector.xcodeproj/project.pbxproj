@@ -15,8 +15,9 @@
 		0A0E4D7B1EF96B9800D10709 /* MobileProtector.debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0A0E4D761EF96B9800D10709 /* MobileProtector.debug.xcconfig */; };
 		0A0E4D7C1EF96B9800D10709 /* MobileProtector.release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 0A0E4D781EF96B9800D10709 /* MobileProtector.release.xcconfig */; };
 		0A1931811F014B770054A4A4 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A1931801F014B770054A4A4 /* CoreTelephony.framework */; };
+		0A1931841F0152F50054A4A4 /* NSString+StringRegular.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1931831F0152F50054A4A4 /* NSString+StringRegular.m */; };
+		0A1931871F01531E0054A4A4 /* iOSHardwareInfoDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A1931861F01531E0054A4A4 /* iOSHardwareInfoDataBase.m */; };
 		0A233AA41EFBB516002A6853 /* DeviceHarewareHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A233AA31EFBB516002A6853 /* DeviceHarewareHeaderView.m */; };
-		0A233AA61EFBB51D002A6853 /* DeviceHarewareHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A233AA51EFBB51D002A6853 /* DeviceHarewareHeaderView.xib */; };
 		0A2A64501EFAC12B00B01E3E /* MainCheckerFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A644F1EFAC12B00B01E3E /* MainCheckerFooterView.m */; };
 		0A2A64521EFAC13100B01E3E /* MainCheckerFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2A64511EFAC13100B01E3E /* MainCheckerFooterView.xib */; };
 		0A874BD91EF96DE3001F5186 /* MainCheckerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A874BD81EF96DE3001F5186 /* MainCheckerController.m */; };
@@ -50,9 +51,12 @@
 		0A0E4D781EF96B9800D10709 /* MobileProtector.release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = MobileProtector.release.xcconfig; sourceTree = "<group>"; };
 		0A0E4D791EF96B9800D10709 /* MobileProtectorAppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MobileProtectorAppConfig.h; sourceTree = "<group>"; };
 		0A1931801F014B770054A4A4 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		0A1931821F0152F50054A4A4 /* NSString+StringRegular.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+StringRegular.h"; sourceTree = "<group>"; };
+		0A1931831F0152F50054A4A4 /* NSString+StringRegular.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+StringRegular.m"; sourceTree = "<group>"; };
+		0A1931851F01531E0054A4A4 /* iOSHardwareInfoDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSHardwareInfoDataBase.h; sourceTree = "<group>"; };
+		0A1931861F01531E0054A4A4 /* iOSHardwareInfoDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSHardwareInfoDataBase.m; sourceTree = "<group>"; };
 		0A233AA21EFBB516002A6853 /* DeviceHarewareHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceHarewareHeaderView.h; sourceTree = "<group>"; };
 		0A233AA31EFBB516002A6853 /* DeviceHarewareHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceHarewareHeaderView.m; sourceTree = "<group>"; };
-		0A233AA51EFBB51D002A6853 /* DeviceHarewareHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeviceHarewareHeaderView.xib; sourceTree = "<group>"; };
 		0A2A644E1EFAC12B00B01E3E /* MainCheckerFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainCheckerFooterView.h; sourceTree = "<group>"; };
 		0A2A644F1EFAC12B00B01E3E /* MainCheckerFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainCheckerFooterView.m; sourceTree = "<group>"; };
 		0A2A64511EFAC13100B01E3E /* MainCheckerFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCheckerFooterView.xib; sourceTree = "<group>"; };
@@ -236,7 +240,6 @@
 				0A2A64511EFAC13100B01E3E /* MainCheckerFooterView.xib */,
 				0A233AA21EFBB516002A6853 /* DeviceHarewareHeaderView.h */,
 				0A233AA31EFBB516002A6853 /* DeviceHarewareHeaderView.m */,
-				0A233AA51EFBB51D002A6853 /* DeviceHarewareHeaderView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,6 +284,10 @@
 				0A5503321EFAB6A800D5F6A4 /* DeviceKit.h */,
 				0AF3BE131EFE14A8009A0B73 /* DeviceManager.h */,
 				0AF3BE141EFE14A8009A0B73 /* DeviceManager.m */,
+				0A1931821F0152F50054A4A4 /* NSString+StringRegular.h */,
+				0A1931831F0152F50054A4A4 /* NSString+StringRegular.m */,
+				0A1931851F01531E0054A4A4 /* iOSHardwareInfoDataBase.h */,
+				0A1931861F01531E0054A4A4 /* iOSHardwareInfoDataBase.m */,
 			);
 			name = DeviceKit;
 			path = ../../../MyIosCodes/DeviceKit;
@@ -366,7 +373,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A233AA61EFBB51D002A6853 /* DeviceHarewareHeaderView.xib in Resources */,
 				0A0E4D581EF969B800D10709 /* LaunchScreen.storyboard in Resources */,
 				0A0E4D551EF969B800D10709 /* Assets.xcassets in Resources */,
 				0A0E4D7B1EF96B9800D10709 /* MobileProtector.debug.xcconfig in Resources */,
@@ -441,11 +447,13 @@
 				0A874BE81EF97A80001F5186 /* DeviceAnalyzeManager.m in Sources */,
 				0A0E4D4A1EF969B800D10709 /* main.m in Sources */,
 				0AF3BE151EFE14A8009A0B73 /* DeviceManager.m in Sources */,
+				0A1931841F0152F50054A4A4 /* NSString+StringRegular.m in Sources */,
 				0A233AA41EFBB516002A6853 /* DeviceHarewareHeaderView.m in Sources */,
 				0A874BE21EF970BA001F5186 /* MainCheckerHeaderView.m in Sources */,
 				0A874BDE1EF97074001F5186 /* VWWWaterView.m in Sources */,
 				0A9A1BD71EFB67C800B97B33 /* AppUtils.m in Sources */,
 				0A2A64501EFAC12B00B01E3E /* MainCheckerFooterView.m in Sources */,
+				0A1931871F01531E0054A4A4 /* iOSHardwareInfoDataBase.m in Sources */,
 				0A9A1BD91EFB67C800B97B33 /* Reachability.m in Sources */,
 				0AC762B91EFAB10200135372 /* UIDevice-Hardware.m in Sources */,
 				0A9A1BE41EFBAD2300B97B33 /* RootNavViewController.m in Sources */,

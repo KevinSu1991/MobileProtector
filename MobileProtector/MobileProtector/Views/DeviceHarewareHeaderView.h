@@ -12,4 +12,6 @@
 @property (nonatomic, weak) IBOutlet UILabel* deviceTypeLabel;
 @property (nonatomic, weak) IBOutlet UILabel* deviceSysVersionLabel;
 @property (nonatomic, weak) IBOutlet UILabel* deviceNameLabel;
+
+- (void)loadBaseUI;
 @end

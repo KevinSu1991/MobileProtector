@@ -10,8 +10,7 @@
 
 @implementation DeviceHarewareHeaderView
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
+-(void)loadBaseUI {
     self.deviceTypeLabel.textColor = [AppThemeManager currentTheme].appTextColor;
     self.deviceSysVersionLabel.textColor = [AppThemeManager currentTheme].appTextColor;
     self.deviceNameLabel.textColor = [AppThemeManager currentTheme].appTextColor;
