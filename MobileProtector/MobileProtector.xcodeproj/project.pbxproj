@@ -20,6 +20,11 @@
 		0A233AA41EFBB516002A6853 /* DeviceHarewareHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A233AA31EFBB516002A6853 /* DeviceHarewareHeaderView.m */; };
 		0A2A64501EFAC12B00B01E3E /* MainCheckerFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A644F1EFAC12B00B01E3E /* MainCheckerFooterView.m */; };
 		0A2A64521EFAC13100B01E3E /* MainCheckerFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2A64511EFAC13100B01E3E /* MainCheckerFooterView.xib */; };
+		0A82505B1F04F63B004E1D7B /* AddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82505A1F04F63B004E1D7B /* AddressBookViewController.m */; };
+		0A82505F1F04F87E004E1D7B /* ContactsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82505E1F04F87E004E1D7B /* ContactsService.m */; };
+		0A8250611F04F897004E1D7B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8250601F04F897004E1D7B /* AddressBook.framework */; };
+		0A8250631F04F89B004E1D7B /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8250621F04F89B004E1D7B /* AddressBookUI.framework */; };
+		0A8250651F04FA9D004E1D7B /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8250641F04FA9D004E1D7B /* Contacts.framework */; };
 		0A874BD91EF96DE3001F5186 /* MainCheckerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A874BD81EF96DE3001F5186 /* MainCheckerController.m */; };
 		0A874BDE1EF97074001F5186 /* VWWWaterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A874BDD1EF97074001F5186 /* VWWWaterView.m */; };
 		0A874BE21EF970BA001F5186 /* MainCheckerHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A874BE11EF970BA001F5186 /* MainCheckerHeaderView.m */; };
@@ -61,6 +66,13 @@
 		0A2A644F1EFAC12B00B01E3E /* MainCheckerFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainCheckerFooterView.m; sourceTree = "<group>"; };
 		0A2A64511EFAC13100B01E3E /* MainCheckerFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCheckerFooterView.xib; sourceTree = "<group>"; };
 		0A5503321EFAB6A800D5F6A4 /* DeviceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceKit.h; sourceTree = "<group>"; };
+		0A8250591F04F63B004E1D7B /* AddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookViewController.h; sourceTree = "<group>"; };
+		0A82505A1F04F63B004E1D7B /* AddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookViewController.m; sourceTree = "<group>"; };
+		0A82505D1F04F87E004E1D7B /* ContactsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsService.h; sourceTree = "<group>"; };
+		0A82505E1F04F87E004E1D7B /* ContactsService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactsService.m; sourceTree = "<group>"; };
+		0A8250601F04F897004E1D7B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		0A8250621F04F89B004E1D7B /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		0A8250641F04FA9D004E1D7B /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
 		0A874BD51EF96D70001F5186 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		0A874BD61EF96D90001F5186 /* AppConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppConfig.h; sourceTree = "<group>"; };
 		0A874BD71EF96DE3001F5186 /* MainCheckerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainCheckerController.h; sourceTree = "<group>"; };
@@ -101,6 +113,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A8250651F04FA9D004E1D7B /* Contacts.framework in Frameworks */,
+				0A8250631F04F89B004E1D7B /* AddressBookUI.framework in Frameworks */,
+				0A8250611F04F897004E1D7B /* AddressBook.framework in Frameworks */,
 				0A1931811F014B770054A4A4 /* CoreTelephony.framework in Frameworks */,
 				53BEB9F9BD3D32F592CC2076 /* libPods-MobileProtector.a in Frameworks */,
 			);
@@ -182,6 +197,8 @@
 				0A874BD81EF96DE3001F5186 /* MainCheckerController.m */,
 				0A9A1BCD1EFB642400B97B33 /* DeviceHardwareInfoController.h */,
 				0A9A1BCE1EFB642400B97B33 /* DeviceHardwareInfoController.m */,
+				0A8250591F04F63B004E1D7B /* AddressBookViewController.h */,
+				0A82505A1F04F63B004E1D7B /* AddressBookViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,6 +218,16 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		0A82505C1F04F87E004E1D7B /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				0A82505D1F04F87E004E1D7B /* ContactsService.h */,
+				0A82505E1F04F87E004E1D7B /* ContactsService.m */,
+			);
+			name = Contacts;
+			path = ../../../MyIosCodes/Contacts;
+			sourceTree = "<group>";
+		};
 		0A8554901EFA7E52002FC50A /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -211,6 +238,7 @@
 		0A874BDA1EF97052001F5186 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				0A82505C1F04F87E004E1D7B /* Contacts */,
 				0A9A1BDA1EFB685B00B97B33 /* Logging */,
 				0A9A1BD01EFB67C800B97B33 /* Utils */,
 				0AC762AD1EFAB10200135372 /* DeviceKit */,
@@ -296,6 +324,9 @@
 		2954A908DAFB35C27C4EFE53 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A8250641F04FA9D004E1D7B /* Contacts.framework */,
+				0A8250621F04F89B004E1D7B /* AddressBookUI.framework */,
+				0A8250601F04F897004E1D7B /* AddressBook.framework */,
 				0A1931801F014B770054A4A4 /* CoreTelephony.framework */,
 				0CEEEDBCBB31DB9CEFD4A07F /* libPods-MobileProtector.a */,
 			);
@@ -438,6 +469,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A82505F1F04F87E004E1D7B /* ContactsService.m in Sources */,
 				0A9A1BE71EFBAF6B00B97B33 /* ViewControllerUtils.m in Sources */,
 				0A9A1BD81EFB67C800B97B33 /* EncryptionUtils.m in Sources */,
 				0A9A1BE11EFBAB4800B97B33 /* AppThemeManager.m in Sources */,
@@ -456,6 +488,7 @@
 				0A1931871F01531E0054A4A4 /* iOSHardwareInfoDataBase.m in Sources */,
 				0A9A1BD91EFB67C800B97B33 /* Reachability.m in Sources */,
 				0AC762B91EFAB10200135372 /* UIDevice-Hardware.m in Sources */,
+				0A82505B1F04F63B004E1D7B /* AddressBookViewController.m in Sources */,
 				0A9A1BE41EFBAD2300B97B33 /* RootNavViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

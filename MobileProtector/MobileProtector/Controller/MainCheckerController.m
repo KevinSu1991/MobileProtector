@@ -11,6 +11,7 @@
 #import "MainCheckerHeaderView.h"
 #import "MainCheckerFooterView.h"
 #import "DeviceHardwareInfoController.h"
+#import "AddressBookViewController.h"
 
 @interface MainCheckerController ()<UITableViewDelegate, UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -113,7 +114,7 @@ static NSString* CELLIDENTIFIER = @"MainCheckerCell";
         DeviceHardwareInfoController* hardwareInfoController = ViewController(@"Main", @"DeviceHardwareInfoController");
         [self.navigationController pushViewController:hardwareInfoController animated:YES];
     } else if ([title isEqualToString:MAIN_CHECKER_QUICK_SCAN]) {
-        
+        [AddressBookViewController openByPush:self.navigationController];
     } else if ([title isEqualToString:MAIN_CHECKER_ADDRESSBOOK_OPTIMIZATION]) {
         
     }

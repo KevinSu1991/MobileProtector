@@ -155,6 +155,8 @@
 	<string>Some Ads serviced in this app requires your permission to access the Bluetooth.</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>Some Ads serviced in this app requires your permission to access the calendars.</string>
+	<key>NSContactsUsageDescription</key>
+	<string>The app requres your permission to access the contacts.</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>The app requres your permission to access the photos.</string>
 	<key>UILaunchStoryboardName</key>
