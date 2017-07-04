@@ -20,6 +20,9 @@
 		0A233AA41EFBB516002A6853 /* DeviceHarewareHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A233AA31EFBB516002A6853 /* DeviceHarewareHeaderView.m */; };
 		0A2A64501EFAC12B00B01E3E /* MainCheckerFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A2A644F1EFAC12B00B01E3E /* MainCheckerFooterView.m */; };
 		0A2A64521EFAC13100B01E3E /* MainCheckerFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2A64511EFAC13100B01E3E /* MainCheckerFooterView.xib */; };
+		0A6C18831F0BD75D0077EF75 /* DuplicateContactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6C18821F0BD75D0077EF75 /* DuplicateContactsController.m */; };
+		0A6C18861F0BD77F0077EF75 /* IncompletedContactsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6C18851F0BD77F0077EF75 /* IncompletedContactsController.m */; };
+		0A6C188A1F0BDD920077EF75 /* DuplicateContactsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A6C18891F0BDD920077EF75 /* DuplicateContactsCell.m */; };
 		0A82505B1F04F63B004E1D7B /* AddressBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82505A1F04F63B004E1D7B /* AddressBookViewController.m */; };
 		0A82505F1F04F87E004E1D7B /* ContactsService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A82505E1F04F87E004E1D7B /* ContactsService.m */; };
 		0A8250611F04F897004E1D7B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A8250601F04F897004E1D7B /* AddressBook.framework */; };
@@ -66,6 +69,12 @@
 		0A2A644F1EFAC12B00B01E3E /* MainCheckerFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainCheckerFooterView.m; sourceTree = "<group>"; };
 		0A2A64511EFAC13100B01E3E /* MainCheckerFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCheckerFooterView.xib; sourceTree = "<group>"; };
 		0A5503321EFAB6A800D5F6A4 /* DeviceKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceKit.h; sourceTree = "<group>"; };
+		0A6C18811F0BD75D0077EF75 /* DuplicateContactsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuplicateContactsController.h; sourceTree = "<group>"; };
+		0A6C18821F0BD75D0077EF75 /* DuplicateContactsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuplicateContactsController.m; sourceTree = "<group>"; };
+		0A6C18841F0BD77F0077EF75 /* IncompletedContactsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IncompletedContactsController.h; sourceTree = "<group>"; };
+		0A6C18851F0BD77F0077EF75 /* IncompletedContactsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IncompletedContactsController.m; sourceTree = "<group>"; };
+		0A6C18881F0BDD920077EF75 /* DuplicateContactsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DuplicateContactsCell.h; sourceTree = "<group>"; };
+		0A6C18891F0BDD920077EF75 /* DuplicateContactsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DuplicateContactsCell.m; sourceTree = "<group>"; };
 		0A8250591F04F63B004E1D7B /* AddressBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddressBookViewController.h; sourceTree = "<group>"; };
 		0A82505A1F04F63B004E1D7B /* AddressBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddressBookViewController.m; sourceTree = "<group>"; };
 		0A82505D1F04F87E004E1D7B /* ContactsService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactsService.h; sourceTree = "<group>"; };
@@ -191,6 +200,7 @@
 		0A0E4D611EF96A1C00D10709 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0A6C18871F0BDD7B0077EF75 /* cell */,
 				0A9A1BE21EFBAD2300B97B33 /* RootNavViewController.h */,
 				0A9A1BE31EFBAD2300B97B33 /* RootNavViewController.m */,
 				0A874BD71EF96DE3001F5186 /* MainCheckerController.h */,
@@ -199,6 +209,10 @@
 				0A9A1BCE1EFB642400B97B33 /* DeviceHardwareInfoController.m */,
 				0A8250591F04F63B004E1D7B /* AddressBookViewController.h */,
 				0A82505A1F04F63B004E1D7B /* AddressBookViewController.m */,
+				0A6C18811F0BD75D0077EF75 /* DuplicateContactsController.h */,
+				0A6C18821F0BD75D0077EF75 /* DuplicateContactsController.m */,
+				0A6C18841F0BD77F0077EF75 /* IncompletedContactsController.h */,
+				0A6C18851F0BD77F0077EF75 /* IncompletedContactsController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +230,15 @@
 				0A9A1BE61EFBAF6B00B97B33 /* ViewControllerUtils.m */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		0A6C18871F0BDD7B0077EF75 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				0A6C18881F0BDD920077EF75 /* DuplicateContactsCell.h */,
+				0A6C18891F0BDD920077EF75 /* DuplicateContactsCell.m */,
+			);
+			path = cell;
 			sourceTree = "<group>";
 		};
 		0A82505C1F04F87E004E1D7B /* Contacts */ = {
@@ -473,6 +496,7 @@
 				0A9A1BE71EFBAF6B00B97B33 /* ViewControllerUtils.m in Sources */,
 				0A9A1BD81EFB67C800B97B33 /* EncryptionUtils.m in Sources */,
 				0A9A1BE11EFBAB4800B97B33 /* AppThemeManager.m in Sources */,
+				0A6C188A1F0BDD920077EF75 /* DuplicateContactsCell.m in Sources */,
 				0A874BD91EF96DE3001F5186 /* MainCheckerController.m in Sources */,
 				0A0E4D661EF96A8E00D10709 /* AppDelegate.m in Sources */,
 				0A9A1BCF1EFB642400B97B33 /* DeviceHardwareInfoController.m in Sources */,
@@ -485,8 +509,10 @@
 				0A874BDE1EF97074001F5186 /* VWWWaterView.m in Sources */,
 				0A9A1BD71EFB67C800B97B33 /* AppUtils.m in Sources */,
 				0A2A64501EFAC12B00B01E3E /* MainCheckerFooterView.m in Sources */,
+				0A6C18861F0BD77F0077EF75 /* IncompletedContactsController.m in Sources */,
 				0A1931871F01531E0054A4A4 /* iOSHardwareInfoDataBase.m in Sources */,
 				0A9A1BD91EFB67C800B97B33 /* Reachability.m in Sources */,
+				0A6C18831F0BD75D0077EF75 /* DuplicateContactsController.m in Sources */,
 				0AC762B91EFAB10200135372 /* UIDevice-Hardware.m in Sources */,
 				0A82505B1F04F63B004E1D7B /* AddressBookViewController.m in Sources */,
 				0A9A1BE41EFBAD2300B97B33 /* RootNavViewController.m in Sources */,

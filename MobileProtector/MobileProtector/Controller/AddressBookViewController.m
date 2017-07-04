@@ -8,6 +8,7 @@
 
 #import "AddressBookViewController.h"
 #import "ContactsService.h"
+#import "DuplicateContactsController.h"
 
 @interface AddressBookViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *contactsInfoLabel;
@@ -72,7 +73,7 @@
                 [mSet addObject:person2];
             }
         }
-        if (mSet.count > 0) {
+        if (mSet.count > 0 && ![self set:mSet inArray:self.duplicateContacts]) {
             [self.duplicateContacts addObject:mSet];
         }
     }
@@ -80,6 +81,15 @@
     self.duplicateContactsProgressView.hidden = YES;
     
     self.duplicateContactsLabel.text = [NSString stringWithFormat:@"%li %@", (long)self.duplicateContacts.count, NSLocalizedString(@"duplicate contacts", nil)];
+}
+
+- (BOOL)set:(NSSet*)set inArray:(NSArray*)array {
+    for (NSSet* aSet in array) {
+        if ([aSet isEqual:set]) {
+            return YES;
+        }
+    }
+    return NO;
 }
 
 - (void)checkIncompleteContacts {
@@ -111,6 +121,14 @@
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         self.contactsInfoLabel.text = [NSString stringWithFormat:@"%li%@", (long)count, NSLocalizedString(@"contacts", nil)];
     });
+}
+
+- (IBAction)showDuplicateContacts:(id)sender {
+    [DuplicateContactsController openByPush:self.navigationController contacts:_duplicateContacts];
+}
+
+- (IBAction)showIncomplatedContacts:(id)sender {
+    
 }
 
 + (void)openByPush:(UINavigationController*)navVC {

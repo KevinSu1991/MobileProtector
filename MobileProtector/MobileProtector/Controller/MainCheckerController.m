@@ -79,7 +79,6 @@ static NSString* CELLIDENTIFIER = @"MainCheckerCell";
 - (void)initData {
     dataSource = @[
                    MAIN_CHECKER_DEVICE_ANALYZE,
-                   MAIN_CHECKER_QUICK_SCAN,
                    MAIN_CHECKER_ADDRESSBOOK_OPTIMIZATION
                    ];
 }
@@ -113,10 +112,8 @@ static NSString* CELLIDENTIFIER = @"MainCheckerCell";
     if ([title isEqualToString:MAIN_CHECKER_DEVICE_ANALYZE]) {
         DeviceHardwareInfoController* hardwareInfoController = ViewController(@"Main", @"DeviceHardwareInfoController");
         [self.navigationController pushViewController:hardwareInfoController animated:YES];
-    } else if ([title isEqualToString:MAIN_CHECKER_QUICK_SCAN]) {
-        [AddressBookViewController openByPush:self.navigationController];
     } else if ([title isEqualToString:MAIN_CHECKER_ADDRESSBOOK_OPTIMIZATION]) {
-        
+        [AddressBookViewController openByPush:self.navigationController];
     }
 }
 @end
