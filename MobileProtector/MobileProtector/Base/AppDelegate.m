@@ -20,6 +20,9 @@
     // Override point for customization after application launch.
     [DeviceAnalyzeManager sharedManager];
     [DeviceManager sharedManager];
+    
+    [SVProgressHUD setMaximumDismissTimeInterval:2];
+    [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
     return YES;
 }
 

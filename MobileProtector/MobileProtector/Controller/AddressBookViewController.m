@@ -35,6 +35,10 @@
     self.view.backgroundColor = RGBACOLOR(241, 241, 241, 1);
     self.duplicateContactsContainer.hidden = YES;
     self.incompleteContactsContainer.hidden = YES;
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
     self.contactsArr = [NSMutableArray array];
     [self checkContact];
 }
@@ -102,11 +106,7 @@
             [[person.LastName lowercaseString] isEqualToString:@"kevinsu"] ) {
             DLog(@"");
         }
-        if (person.MobilePhone.length == 0 &&
-            person.HomeTel.length == 0 &&
-            person.WorkTel.length == 0 &&
-            person.OtherTel.length == 0 &&
-            person.Email.length == 0) {
+        if (person.Phone.length == 0) {
             [self.incompleteContacts addObject:person];
         }
     }

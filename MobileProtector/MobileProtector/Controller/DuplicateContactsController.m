@@ -64,7 +64,21 @@
 }
 
 - (void)combineAtIndexPath:(NSIndexPath *)indexPath {
-    
+    [SVProgressHUD showSuccessWithStatus:nil];
+    NSSet* contactsSet = self.duplicateContacts[indexPath.row];
+    NSArray* contacts = contactsSet.allObjects;
+    IABPerson* person1 = contacts.firstObject;
+    IABPerson* person2 = contacts.lastObject;
+    [person1 combineWithPerson:person2];
+    [ContactsService deletePersons:contacts];
+    [ContactsService addPersons:@[person1]];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [SVProgressHUD showSuccessWithStatus:nil];
+    });
+    NSMutableArray* mArray = [NSMutableArray arrayWithArray:self.duplicateContacts];
+    [mArray removeObjectAtIndex:indexPath.row];
+    self.duplicateContacts = [mArray copy];
+    [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
 }
 
 + (void)openByPush:(UINavigationController*)navVC contacts:(NSArray*)contacts {

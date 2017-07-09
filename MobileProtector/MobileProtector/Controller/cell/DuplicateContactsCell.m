@@ -33,7 +33,7 @@
     }
     self.contact1LetterLabel.text = letter1;
     self.contact1NameLabel.text = name1;
-    self.contact1PhoneLabel.text = person1.MobilePhone;
+    self.contact1PhoneLabel.text = person1.Phone;
     
     NSString* name2 = [NSString stringWithFormat:@"%@%@", person2.LastName, person2.FirstName];
     NSString* letter2 = @"";
@@ -42,7 +42,7 @@
     }
     self.contact2LetterLabel.text = letter2;
     self.contact2NameLabel.text = name2;
-    self.contact2PhoneLabel.text = person2.MobilePhone;
+    self.contact2PhoneLabel.text = person2.Phone;
 }
 - (IBAction)ignoreAction:(id)sender {
     if (self.delegate && [self.delegate respondsToSelector:@selector(ignoreAtIndexPath:)]) {

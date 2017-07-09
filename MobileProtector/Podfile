@@ -6,6 +6,7 @@ def shared_pods
 pod 'AFNetworking'
 pod 'JSONModel'
 pod 'SDWebImage'
+pod 'SVProgressHUD'
 
 pod 'KYWaterWaveView', '~> 1.1.0'
 pod 'UICountingLabel'

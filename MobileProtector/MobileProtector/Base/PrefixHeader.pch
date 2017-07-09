@@ -17,5 +17,6 @@
 #include "AppThemeManager.h"
 #include "ViewControllerUtils.h"
 #include "DeviceManager.h"
+#include <SVProgressHUD/SVProgressHUD.h>
 
 #endif /* PrefixHeader_pch */
